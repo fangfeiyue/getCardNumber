@@ -80,6 +80,3 @@ function doDownload() {
 
 ```
 - 实现导出卡号功能后，老大说为了方便后台将生成的卡号导入数据库，要增加了将卡号插入sql语句，并导出对应卡号的txt文档。将卡号插入sql语句这个简单，就是字符串的拼接而已，但导出txt遇到了点问题，因为我用的mac，老大的用的也是mac，如果用导出txt就必须使用IE浏览器，使用这么个功能还要让人专门安装IE，这太坑爹了。网上找了各种办法都不行，随后想到我上一步不是导出csv文件了吗，再用上面的代码导出txt不就行了吗，结果没有我想得那么简单，最多导出一张txt，其余全失败。。。这就尴尬了，最后修改了下导出看好的数据结构，让它符合导出csv文件的格式，成功导出。
-
-    downloadLink.href = "data:text/csv;charset=utf-8,\ufeff" + context; //加上 \ufeff BOM 头怎
-    downloadLink.href = "data:text/csv;charset=utf-8,\ufeff" + context; //加上 \ufeff BOM 头
