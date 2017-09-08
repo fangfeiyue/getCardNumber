@@ -1,0 +1,37 @@
+table{
+    text-align: center;
+}
+
+table>tbody>tr>td{
+    text-align: left;
+}
+
+.box{
+    text-align: center;
+    width: 480px;
+    min-height: 540px;
+    margin: 50px auto;
+    background: #eee;
+}
+.box1{
+    padding-top: 40px;
+}
+.startFlag{
+    color:  red;
+vertical-align: middle;
+}
+
+.range{
+    padding: 0 8px;
+}
+
+.btnBox{
+    margin-top: 50px;
+}
+
+.btnLeft{
+    margin-right: 30px;
+}
+.btnRight{
+    margin-left: 30px;
+}
